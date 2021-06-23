@@ -1,3 +1,15 @@
+let input = require('fs')
+  .readFileSync('/dev/stdin')
+  .toString()
+  .trim()
+  .split(' ');
+
+let input = require('fs')
+  .readFileSync('/dev/stdin')
+  .toString()
+  .trim()
+  .split('\n');
+
 // 한줄 입력
 let fs = require('fs');
 let input = fs.readFileSync('/dev/stdin').toString().split(' ');
