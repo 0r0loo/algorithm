@@ -4,6 +4,9 @@
 
 # 백준
 
+<details>
+<summary>백준</summary>
+
 단계별로 풀기 푸는중
 
 1. 입출력과 사칙연산 (완료)
@@ -36,14 +39,13 @@
 28. 트리
 29. 유니온 파인드
 
+</details>
 # 프로그래머스
 
 ## level 1
 
 <details>
 <summary>level 1</summary>
-
-난이도 문제이름 문제 푼 언어 해결여부 푼날짜
 
 | 문제번호 | 문제 이름                    |     언어     | 해결 여부 | 해결 날짜 |
 | :------: | ---------------------------- | :----------: | :-------: | :-------: |
@@ -108,10 +110,31 @@
 |    59    | 직사각형 별찍기              |              |           |           |
 
 </details>
-level 2
 
-level 3
+## level 2
 
-level 4
+<details>
+<summary>level 2</summary>
 
-level 5
+</details>
+
+## level 3
+
+<details>
+<summary>level 3</summary>
+
+</details>
+
+## level 4
+
+<details>
+<summary>level 4</summary>
+
+</details>
+
+## level 5
+
+<details>
+<summary>level 5</summary>
+
+</details>
