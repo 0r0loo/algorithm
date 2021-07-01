@@ -12,4 +12,4 @@ input.shift();
 
 input.sort((a, b) => a - b);
 
-// input.forEach((item) => console.log(item));
+input.forEach((item) => console.log(item));
