@@ -21,6 +21,9 @@ top`
   .trim()
   .split('\n');
 
+/* 
+ㅁㅏㅈ은 풀이 인데 클래스로 바꾸고싶어서
+
 const testCnt = Number(input[0]);
 const commandList = input.slice(1, input.length);
 
@@ -51,7 +54,7 @@ for (let i = 0; i < testCnt; i++) {
   }
 }
 console.log(result.slice(0, result.length - 1));
-
+*/
 // 시간초과
 /* 콘솔로그를 여러번 해서 시간초과난대 문자열로 합쳐서 마지막에 한번만해주면 시간초과안남
     for (let i = 0; i < testCnt; i++) {
