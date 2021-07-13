@@ -8,8 +8,17 @@
 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=0r0l)](https://solved.ac/0r0l)
 
 단계별로 풀기 중
-
+21.06.22 브1
+21.06.23 실5
 21.07.01 실버4
+21.07.06 실버3
+21.07.12 실버2
+실1
+골5
+골4
+골3
+골2
+골1
 
 <details>
 <summary>백준</summary>
