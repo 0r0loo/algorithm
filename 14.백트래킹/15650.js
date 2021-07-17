@@ -1,10 +1,8 @@
-// let input = require('fs')
-//   .readFileSync('/dev/stdin')
-//   .toString()
-//   .trim()
-//   .split(' ');
-
-let input = `4 2`.split(' ');
+let input = require('fs')
+  .readFileSync('/dev/stdin')
+  .toString()
+  .trim()
+  .split(' ');
 
 let [n, m] = input;
 [n, m] = [+n, +m];
