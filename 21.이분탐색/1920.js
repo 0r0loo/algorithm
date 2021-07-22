@@ -19,6 +19,27 @@ const nList = nStr
 const mList = mStr.split(' ').map((str) => +str);
 let result = '';
 
+mList.forEach((num) => {
+  result += binarySearch(num, nList) + '\n';
+});
+console.log(result.trim());
+
+function binarySearch(n, arr) {
+  let start = 0;
+  let end = arr.length - 1;
+  while (start <= end) {
+    let mid = Math.floor((start + end) / 2);
+    if (arr[mid] === n) {
+      return '1';
+    } else if (arr[mid] < n) {
+      start = mid + 1;
+    } else {
+      end = mid - 1;
+    }
+  }
+  return '0';
+}
+
 /* 이분 탐색이 아니라 시간초과 날꺼같은 코드
   역시 시간초과
   let [n, nStr, m, mStr] = input;
