@@ -1,42 +1,36 @@
-let input = require('fs')
-  .readFileSync('/dev/stdin')
-  .toString()
-  .trim()
-  .split('\n');
+// let input = require('fs')
+//   .readFileSync('/dev/stdin')
+//   .toString()
+//   .trim()
+//   .split('\n');
 
-let [n, ...evenList] = input.map((str) => +str);
+let input = `8
+20
+42
+0`.split('\n');
+
+input.pop();
+
+input = input.map(Number);
 let result = '';
+let isEnd = false;
 
-for (let i = 0; i < n; i++) {
-  const primeList = isPrime(evenList[i]);
-  const tempList = [];
-  for (let j = 2; j <= evenList[i] / 2; j++) {
-    if (primeList[j]) {
-      const rest = evenList[i] - j;
-      if (primeList[rest]) {
-        tempList.push(`${j} ${rest}`);
+for (let i = 0; i < input.length; i++) {
+  const primeList = isPrime(input[i]);
+  for (let j = 0; j < primeList.length - 1; j++) {
+    for (let k = j + 1; k < primeList.length; k++) {
+      if (input[i] === primeList[j] + primeList[k]) {
+        result += `${input[i]} = ${primeList[j]} + ${primeList[k]}\n`;
+        isEnd = true;
+        break;
       }
     }
+    if (isEnd) {
+      isEnd = false;
+      break;
+    }
   }
-  if (tempList.length === 1) {
-    result += tempList[0];
-  } else {
-    const [a, b] = tempList[0].split(' ');
-    let min = Math.abs(+b - +a);
-    let minStr = '';
-    tempList.forEach((str) => {
-      const [c, d] = str.split(' ');
-      const range = Math.abs(+d - +c);
-      if (range < min) {
-        min = range;
-        minStr = str;
-      }
-    });
-    result += minStr;
-  }
-  result += '\n';
 }
-
 console.log(result.trim());
 function isPrime(n) {
   const primeList = Array(n + 1)
@@ -50,5 +44,6 @@ function isPrime(n) {
       }
     }
   }
-  return primeList;
+  primeList[2] = false;
+  return primeList.map((is, idx) => is && idx).filter((num) => num);
 }
