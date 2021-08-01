@@ -19,9 +19,9 @@
   "Create boj input multi line": {
     "prefix": "bim",
     "body": [
-      "let input = ``.trim().split('${1}');",
-      "// let input = require('fs').readFileSync('/dev/stdin').toString().trim().split('${1}');",
-      "${2}"
+      "let input = `${2}`.trim().split('${1}');",
+      "// input = require('fs').readFileSync('/dev/stdin').toString().trim().split('${1}');",
+      "${3}"
     ],
     "description": "Create boj input multi line"
   }
