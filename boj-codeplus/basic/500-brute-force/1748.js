@@ -12,6 +12,5 @@ for (let i = 1; i <= input; i++) {
     ten *= 10;
   }
   result += digit;
-  console.log(i, result);
 }
 console.log(result);
