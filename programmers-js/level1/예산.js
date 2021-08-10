@@ -1,4 +1,17 @@
-function solution(d, budget) {}
+function solution(d, budget) {
+  d.sort((a, b) => a - b);
+  let result = 0;
+  let sum = 0;
+  for (let i = 0; i < d.length; i++) {
+    result++;
+    sum += d[i];
+    if (sum > budget) {
+      sum -= d[i];
+      result--;
+    }
+  }
+  return result;
+}
 
 console.log(solution([1, 3, 2, 5, 4], 9));
 console.log(solution([2, 2, 3, 3], 10));
