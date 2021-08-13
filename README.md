@@ -215,8 +215,12 @@
 
 ## level 3
 
+1 / ?
+
 <details>
 <summary>level 3</summary>
+
+1문제품 가장 긴 팰린드롬
 
 </details>
 
