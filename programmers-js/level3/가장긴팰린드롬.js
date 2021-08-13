@@ -18,7 +18,6 @@ function expand(string, left, right) {
     left--;
     right++;
   }
-  console.log(left, right);
   return string.slice(left + 1, right);
 }
 
