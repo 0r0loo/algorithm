@@ -5,3 +5,5 @@ SPACE    1    SPACE
   .trim()
   .split('\n');
 // input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
+
+for (let i = 0; i < input.length; i++) {}
