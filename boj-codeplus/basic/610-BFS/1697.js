@@ -1,21 +1,22 @@
-let input = `5 17`.trim().split(' ');
-// input = require('fs').readFileSync('/dev/stdin').toString().trim().split(' ');
+let input = `5 17`.trim().split(' ').map(Number);
+// input = require('fs').readFileSync('/dev/stdin').toString().trim().split(' ').map(Number);
 
-let [n, k] = input;
+const [N, K] = input;
+const visit = Array.from({ length: 100100 }, () => 0);
 
-n = +n;
-k = +k;
-let cnt = 0;
-while (true) {
-  if (k + 1 === n || k - 1 === n) {
-    cnt++;
-    break;
+function bfs(N) {
+  const queue = [];
+  queue.push([N, 0]);
+  visit[N] = 1;
+  while (queue.length) {
+    const [cur, time] = queue.shift();
+    if (cur === K) return time;
+    for (next of [cur - 1, cur + 1, cur * 2]) {
+      if (!visit[next] && next >= 0 && next <= 100000) {
+        visit[next] = 1;
+        queue.push([next, time + 1]);
+      }
+    }
   }
-  if (k % 2 === 0) {
-    k /= 2;
-  } else {
-    k--;
-  }
-  cnt++;
 }
-console.log(cnt);
+console.log(bfs(N));
