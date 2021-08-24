@@ -1,12 +1,43 @@
 let input = `4
-1 2 3 4`
+1 2 3 4 5`
   .trim()
   .split('\n');
 // input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
+const N = parseInt(input.shift());
+const inputArray = input[0].split(' ').map((n) => parseInt(n));
+let reverseIndex;
 
-let [n, str] = input;
-n = +n;
+for (let i = N - 1; i > 0; i--) {
+  if (inputArray[i] > inputArray[i - 1]) {
+    reverseIndex = i - 1;
+    break;
+  }
+}
 
+if (reverseIndex === undefined) return console.log(-1);
+
+for (let j = N - 1; j > reverseIndex; j--) {
+  if (inputArray[reverseIndex] < inputArray[j]) {
+    const temp = inputArray[reverseIndex];
+    inputArray[reverseIndex] = inputArray[j];
+    inputArray[j] = temp;
+    break;
+  }
+}
+
+const arrange = inputArray.slice(reverseIndex + 1).reverse();
+
+console.log(
+  inputArray
+    .slice(0, reverseIndex + 1)
+    .concat(arrange)
+    .join(' ')
+);
+
+// 1 2 4 3 5
+
+/*
+틀림 ㅠㅠ
 const arr = str.split(' ');
 const arrNum = +arr.join('');
 const b = arr[arr.length - 1];
@@ -22,7 +53,7 @@ if (afterArrNum > arrNum) {
 } else {
   console.log(-1);
 }
-
+*/
 // 콜스텍 터짐
 // const arr = Array.from(Array(n).fill(1), (x, idx) => x + idx);
 
