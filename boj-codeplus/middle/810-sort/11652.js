@@ -1,3 +1,4 @@
+// FAIL
 let input = `6
 1
 2
