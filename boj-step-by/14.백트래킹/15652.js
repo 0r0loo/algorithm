@@ -12,8 +12,20 @@ const arr = Array(n)
   .fill()
   .map((_, idx) => idx + 1);
 let result = '';
+let output = [];
 
-// const comList = combination(arr, m);
-// comList.map((arr) => (result += arr.join(' ') + '\n'));
+function dfs(idx, cnt) {
+  if (cnt === m) {
+    result += output.join(' ') + '\n';
+    return;
+  } else {
+    for (let i = idx; i < n; i++) {
+      output.push(i + 1);
+      dfs(i, output.length);
+      output.pop();
+    }
+  }
+}
 
-// console.log(result.trim());
+dfs(0, 0);
+console.log(result);
