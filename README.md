@@ -1,25 +1,38 @@
 # algorithm
+
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2F0r0l%2Falgorithm&count_bg=%23F39C12&title_bg=%23F1C40F&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-알고리즘 문제 푼거 정리
+# 알고리즘 문제 나의 풀이 모음
+
+알고리즘 문제는 이 레포지토리에서 다 푼다.
+
+- boj
+- boj-step-by
+- boj-codeplus
+- boj-sw
+- programmers(JS)
+- programmers(SQL)
+- codilty
+- 기타(코딩테스트)
 
 # 백준
 
 [![Solved.ac
 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=0r0l)](https://solved.ac/0r0l)
 
-단계별로 풀기 중</br>
-21.06.22 브론즈1 </br>
-21.06.23 실버5 </br>
-21.07.01 실버4 </br>
-21.07.06 실버3 </br>
-21.07.12 실버2 </br>
-21.07.28 실버1 </br>
-21.08.20 골드5 </br>
-골드4 </br>
-골드3 </br>
-골드2 </br>
-골드1 </br>
+## 단계별로 풀기 중
+
+- 21.06.22 브론즈1
+- 21.06.23 실버5
+- 21.07.01 실버4
+- 21.07.06 실버3
+- 21.07.12 실버2
+- 21.07.28 실버1
+- 21.08.20 골드5
+  골드4 </br>
+  골드3 </br>
+  골드2 </br>
+  골드1 </br>
 
 <details>
 <summary>백준</summary>
