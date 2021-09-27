@@ -14,3 +14,12 @@
 4. 가장 흔한 단어 (819. Most Common Word)
 5. 그룹 애너그램 (049. Group Anagrams)
 6. 가장 긴 팰린드롬 문자열 (005. Longest Palindromic Substring)
+
+## 7장 두수의 합
+
+1. 두수의 합 (001. Two Sum)
+2. 빗물 트래핑 (042. Trapping Rain Water) : 못품..어렵
+3. 세 수의 합 (015. 3Sum) : ㄱㄷㄱㄷ O(n^3) 말고 생각해봄
+4. 배열 파티션 1 (561. Array Partition 1)
+5. 자신을 제외한 배열의 곱 (238. Product of Array Except Self)
+6. 주식을 사고팔기 가장 좋은 시점 (121. Best Time to Buy and Sell Stock)
