@@ -2,6 +2,7 @@
   "name": "algorithm",
   "version": "1.0.0",
   "description": "풀이 언어 : JavaScript",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
